@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: ubuntu-desktop-lxde-vnc
+  name: test
   annotations:
     dev.okteto.com/auto-ingress: "true"
 spec:
   type: ClusterIP  
   ports:
-  - name: "ubuntu-desktop-lxde-vnc"
-    port: 80
+  - name: "test"
+    port: 6901
   selector:
-    app: ubuntu-desktop-lxde-vnc
+    app: test
